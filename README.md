@@ -15,6 +15,8 @@ El objetivo es analizar datos de ventas de videojuegos a nivel global, identific
 
 El caso práctico se basa en datos históricos hasta 2016, con el propósito de planear una estrategia de ventas para 2017.
 
+Accesa al Notebook: [/notebook/sprint6_analysis.ipynb](/notebook/sprint6_analysis.ipynb)
+
 ---
 
 ## ✨ Objetivos principales
@@ -101,35 +103,44 @@ El caso práctico se basa en datos históricos hasta 2016, con el propósito de 
 
 ## ✅ Conclusiones
 
-El análisis integral de los datos de ventas de videojuegos entre 2013 y 2016 permitió identificar patrones sólidos y tendencias clave:
+El análisis de los datos de ventas de videojuegos (2013–2016) permitió identificar hallazgos clave:
 
 1. **Tendencias globales**  
-   - Picos de lanzamientos en 2008–2009, caída hacia 2016.  
-   - *PS2*, *X360* y *PS3* dominaron históricamente, pero *PS4* tomó el liderazgo en los últimos años.  
-   - Géneros más rentables: *Action*, *Shooter* y *Sports*.  
+   - Picos de lanzamientos en 2008–2009, caída progresiva hacia 2016.  
+   - *PS2*, *X360* y *PS3* fueron históricamente líderes; *PS4* tomó el liderazgo reciente.  
+   - *Action* fue el género más rentable, seguido de *Shooter* y *Sports*.  
 
 2. **Impacto de reseñas**  
-   - Las calificaciones de críticos correlacionan moderadamente con las ventas (ej. en *PS4*).  
-   - Las reseñas de usuarios no son un buen predictor de ventas, mostrando correlación débil o negativa.  
+   - Correlación moderada entre `critic_score` y ventas (ej. *PS4*).  
+   - Correlación débil o negativa entre `user_score` y ventas, mostrando bajo poder predictivo.  
 
 3. **Diferencias regionales**  
-   - **NA/EU**: preferencia por *PS4/XOne* y géneros *Action* y *Shooter*.  
-   - **JP**: preferencia por *Role-Playing* y consolas portátiles (*3DS*, *PSV*).  
-   - La clasificación ESRB impacta más en NA/EU que en JP.  
+   - **NA/EU**: preferencias en *PS4/XOne* y géneros *Action/Shooter*.  
+   - **JP**: fuerte preferencia por *Role-Playing* y consolas portátiles (*3DS*, *PSV*).  
+   - El impacto de las clasificaciones ESRB es relevante en NA/EU, pero poco en JP.  
 
 4. **Pruebas de hipótesis**  
-   - No hay diferencia significativa en calificaciones de usuario entre *Xbox One* y *PC*.  
-   - Sí hay diferencia significativa en ventas entre *Action* y *Sports*, favoreciendo a *Action*.  
+   - No se detectaron diferencias significativas en calificaciones de usuario entre *Xbox One* y *PC*.  
+   - Sí hubo diferencia significativa en ventas entre *Action* y *Sports*:  
+     - Muestras: *Action* = 766 juegos, *Sports* = 214 juegos  
+     - T-statistic = -2.991, p-valor = 0.003 (< 0.05)  
+     - **Conclusión:** *Action* tiene un desempeño comercial significativamente superior a *Sports*.  
 
 ---
 
 ## 📌 Recomendaciones
 
-- Diseñar campañas regionales diferenciadas según géneros y plataformas.  
-- Dar más peso a las críticas profesionales en la toma de decisiones.  
-- Enfocar marketing en *Action/Shooter* en occidente y *Role-Playing* en Japón.  
-- Continuar con análisis actualizado y modelos predictivos para pronósticos más robustos.  
+- **Campañas regionales diferenciadas:**  
+  - **NA/EU:** priorizar *Action*, *Shooter* y *Sports* en *PS4/XOne*.  
+  - **JP:** promover *Role-Playing* en plataformas portátiles.  
 
+- **Toma de decisiones:**  
+  - Dar más peso a las reseñas de críticos para prever desempeño comercial.  
+  - Usar reseñas de usuarios como insumo cualitativo más que predictor de ventas.  
+
+- **Estrategia de inversión:**  
+  - Apostar por géneros con crecimiento sostenido (*Action*, *Shooter*).  
+  - Evitar grandes inversiones en géneros de bajo retorno como *Puzzle* o *Strategy*, salvo en nichos.  
 
 ---
 
