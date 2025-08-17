@@ -15,7 +15,7 @@ El objetivo es analizar datos de ventas de videojuegos a nivel global, identific
 
 El caso práctico se basa en datos históricos hasta 2016, con el propósito de planear una estrategia de ventas para 2017.
 
-Accesa al Notebook: [/notebook/sprint6_analysis.ipynb](/notebook/sprint6_analysis.ipynb)
+Accesa al Notebook: [/notebook/sprint6_analysis.ipynb](https://github.com/cjhirashi/proyecto-sprint-6/blob/main/notebooks/sprint6_analysis.ipynb)
 
 ---
 
