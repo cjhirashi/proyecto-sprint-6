@@ -72,9 +72,6 @@ El caso práctico se basa en datos históricos hasta 2016, con el propósito de 
 
 3. **Abrir el notebook en Jupyter**
 
-   ```bash
-   jupyter notebook notebooks/sprint6_analysis.ipynb
-   ```
 
 ---
 
