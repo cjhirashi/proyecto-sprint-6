@@ -72,6 +72,9 @@ El caso práctico se basa en datos históricos hasta 2016, con el propósito de 
 
 3. **Abrir el notebook en Jupyter**
 
+   ```bash
+   jupyter notebook notebooks/sprint6_analysis.ipynb
+   ```
 
 ---
 
@@ -89,6 +92,16 @@ El caso práctico se basa en datos históricos hasta 2016, con el propósito de 
 * `critic_score` → Calificación de críticos (0–100)
 * `user_score` → Calificación de usuarios (0–10)
 * `rating` → Clasificación ESRB
+
+---
+
+## 📊 Resultados esperados
+
+* Identificación de plataformas y géneros con mayor potencial de éxito.
+* Distribuciones de ventas por región (NA, EU, JP) con perfiles de usuario.
+* Correlación entre reseñas (usuarios y críticos) y ventas.
+* Evaluación de hipótesis estadísticas en plataformas y géneros.
+* Conclusiones estratégicas para orientar campañas de marketing.
 
 ---
 
